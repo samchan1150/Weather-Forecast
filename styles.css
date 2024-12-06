@@ -31,3 +31,25 @@ h1 {
 .weather-item:last-child {
     border-bottom: none;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Spinner Styles */
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey background */
+    border-top: 6px solid #3498db; /* Blue color for the animated part */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
